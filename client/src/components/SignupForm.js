@@ -1,4 +1,3 @@
-  
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 // import { createUser } from '../utils/API';
@@ -39,7 +38,7 @@ const SignupForm = () => {
       //   throw new Error('Something went wrong!');
       // }
 
-      Auth.login(data.addUser);
+      Auth.login(data.addUser.token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);
